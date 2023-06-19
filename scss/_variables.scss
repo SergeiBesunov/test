@@ -1,0 +1,37 @@
+$basic_black: #181818;
+$basic_white: #fff;
+
+%title_t2{
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 102px;
+  color: $basic_white;
+}
+
+%title_t3{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 67px;
+  color: $basic_white;
+}
+
+@media(max-width: 1000px){
+  %title_t2{
+    font-size: 76px;  
+    line-height: 80px;
+  }
+}
+
+@media(max-width: 500px){
+  %title_t2{
+    font-size: 40px;  
+    line-height: 44px;
+  }
+
+  %title_t3{
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+}
+

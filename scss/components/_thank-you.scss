@@ -1,0 +1,37 @@
+.thankyou{
+    color: black;
+    padding: 36px;
+    width: 420px;
+    text-align: center;
+
+    &__img{
+         margin-top: 20px;
+    }
+
+    &__title{
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 45px;
+        color: #A64CED;
+    }
+
+    &__text{
+        font-size: 24px;
+        line-height: 28px;
+        color: #444444;
+        margin: 20px 0px;
+    }
+
+    &__btn{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .thankyou{
+        width: 90vw;
+    }
+}
+
+

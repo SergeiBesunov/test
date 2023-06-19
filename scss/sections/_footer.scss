@@ -1,0 +1,144 @@
+.footer{
+    background-color: $basic_black;
+
+    &__container{
+        max-width: 1440px;
+        padding: 0px 60px;
+        margin: 0 auto;
+    }
+    
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0px 30px 0px;
+        border-bottom: solid 2px #444444;
+    
+        .nav__list{
+            display: flex;
+        }
+    
+        .nav__item{
+            margin: 0px 20px;
+        }
+    
+    }
+    
+    &__buttons{
+        display: flex;
+        align-items: center;
+    
+        .contact-sales-btn{
+            margin: 0px 30px 0px 10px;
+        }
+    }
+    
+    &__btn{
+        width: 194px;
+        height: 57px;
+        border-radius: 6px;
+        background-color: #242424;
+        margin: 0px 10px;
+    
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    
+    &__bot{
+        color: #B9B9B9;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 300;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+    
+        &-link{
+            margin-left: 20px;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+@media(max-width: 1300px){
+    .footer__top{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 1000px){
+    .footer__bot{
+        display: block;
+    
+        &-links{
+            margin-top: 15px;
+        }
+
+        &-link{
+            margin-left: 20px;
+            text-decoration: underline;
+
+            &:nth-child(1){
+                margin-left: 0px;
+            }
+
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .footer__top{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .footer__buttons{
+        flex-direction: column;
+        align-items: center;
+        .contact-sales-btn{
+            margin: 0px 10px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer__bot-links{
+        display: none;
+    }
+
+    .footer__top{
+        .nav{
+            &__list{
+                flex-direction: column;
+            }
+        
+            &__item{
+                margin: 8px 0px;
+            }
+
+            &__item--mobile{
+                display: block;
+            }
+        }
+    }
+
+    .footer__btn{
+        margin: 10px 0px;
+    }
+}
+
+@media(max-width: 500px){
+    .footer__top{
+        padding: 25px 0px 30px 0px;
+    }
+
+    .footer__container{
+        padding: 0px 16px;
+    }
+}
+

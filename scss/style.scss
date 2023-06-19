@@ -1,0 +1,49 @@
+@import './variables.scss';
+@import './normalize.scss';
+@import './all.scss';
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main{
+    flex: 1 0 auto;
+}
+
+.contact-sales-btn{
+    background-color: #954CED;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: $basic_white;
+    padding: 16px 30px;
+    border-radius: 16px;
+    transition: all 0.2s ease 0s;
+
+    &:hover{
+        background-color: #773ac2;
+    }
+}
+
+.nav{
+    &__item-link{
+        font-weight: 500;
+        transition: all 0.2s ease 0s;
+
+        &:hover{
+            color: rgb(156, 156, 156);
+        }
+    }
+
+    &__item--mobile{
+        display: none;
+    }
+}
+
+body{
+    overflow: visible;
+}
+
+
